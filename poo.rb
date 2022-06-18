@@ -59,3 +59,17 @@ end
 
 persona_2 = Persona_2.new("Carlos", 19)
 puts "#{persona_2.name} tiene #{persona_2.age} años."
+
+
+
+
+#Class reducido segunda forma
+class Persona_3 < Struct.new(:name, :age)
+    # Para declarar Métodos de clases
+    def self.suggested_names
+        ["Pepe","Pepito","Sutano"]
+    end
+end
+
+persona_3 = Persona_3.new("Julian", 33)
+puts "#{persona_3.name} tiene #{persona_3.age} años."
